@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/kalavh/airbcnc/issues"
   },
-  "homepage": "https://github.com/kalavh/airbcnc#readme"
+  "homepage": "https://github.com/kalavh/airbcnc#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
