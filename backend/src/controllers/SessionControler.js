@@ -1,11 +1,12 @@
-// index metodo retorna listagem de sessoes, 
-//show retorna so um , 
-//store, cria uma sessao, update,destroyer
-
+const User = require('../model/User')
 module.exports = {
 
-    store( req, res) {
-        return res.json({message: "hello world"})
+    async store( req, res) {
+       const { email } = req.body;
+      
+      const user =  await User.create({email})
+
+      return res.json(user)
     }
 
 };
