@@ -1,6 +1,18 @@
 const Spot = require('../model/Spot')
 const User = require('../model/User')
+
 module.exports = {
+    //index list
+    async index(req, res) {
+        const { tech } = req.query;
+    
+        const spots = await Spot.find({ techs: tech });
+    
+        return res.json(spots);
+      },
+    
+
+    // store add
     async store ( req, res ) {
         const {filename} = req.file
         const {company, techs, price} = req.body
@@ -21,6 +33,6 @@ module.exports = {
         })
 
         return res.json(spot)
-        c
+        
     }
 }
