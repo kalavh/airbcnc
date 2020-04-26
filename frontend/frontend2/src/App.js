@@ -4,23 +4,24 @@ import './App.css';
 
 function App() {
   return (  
-    <div className="Container">
+    <div className="container">
 
         <img src={logo}  />
         <div className="content">
           <p>
-            Ofereça Spots para programadores e
+            Ofereça espaço para programadores e
             encontre talentos para sua empresa
           </p>
-          <from>
+         
+          <form>
             <label htmlFor="email">E-Mail </label>
             <input 
             id="email" 
             type="email" 
             placeholder="Seu E-mail"/> 
       
-          <button type="submit">Entrar</button>
-          </from>
+          <button className="btn" type="submit">Entrar</button>
+          </form>
         </div>
         <h1> Hh</h1>
     </div>
