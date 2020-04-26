@@ -1,4 +1,5 @@
 import React from 'react';
+import api from './services/api';
 import logo from './assets/logo.svg';
 import './App.css';
 
@@ -8,11 +9,13 @@ function App() {
 
         <img src={logo}  />
         <div className="content">
-          <p>
-            Ofereça espaço para programadores e
-            encontre talentos para sua empresa
+          <p className="oneP">
+          Rent your spot and
           </p>
-         
+          <p className="twoP">
+         discovery a developers
+          </p>
+        
           <form>
             <label htmlFor="email">E-Mail </label>
             <input 

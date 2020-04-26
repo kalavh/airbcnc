@@ -38,11 +38,24 @@ body, input ,button {
   padding: 30px;
 
 }
+.content .oneP{
+  font-size: 22px;
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
 
-.content > p {
+}
+
+.content .twoP{
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 30px;
+  align-items: right;
+  display: flex;
+  justify-content: center;
+  color: #F05A5B;
+  
 }
 
 .content form {
