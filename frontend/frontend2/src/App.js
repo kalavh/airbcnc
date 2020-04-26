@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   function handleSubmit(event) {
     event.preventDefault()
-    console.log("hello Niggaaaa")
+    console.log("hello world")
   }
 
   return (  
@@ -35,5 +35,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
