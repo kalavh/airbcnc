@@ -4,6 +4,11 @@ import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
+  function handleSubmit(event) {
+    event.preventDefault()
+    console.log("hello Niggaaaa")
+  }
+
   return (  
     <div className="container">
 
@@ -16,7 +21,7 @@ function App() {
          discovery a developers
           </p>
         
-          <form>
+          <form onSubmit={handleSubmit}>
             <label htmlFor="email">E-Mail </label>
             <input 
             id="email" 
